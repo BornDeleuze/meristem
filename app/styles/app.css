@@ -3,20 +3,20 @@
 /* app/styles.css */
 body {
   font-family: futura-pt, futura, sans-serif;
-  background-color: #F1EFEF;
+  background-color: #f1efef;
 }
 
 header {
   margin-left: auto;
   margin-right: auto;
-  background-color: #F1EFEF;
+  background-color: #f1efef;
   color: #191717;
   padding: 20px;
   display: flex;
   max-width: 1000px;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 3px solid #CCC8AA;
+  border-bottom: 3px solid #ccc8aa;
 }
 
 h3 {
@@ -33,7 +33,7 @@ h3 {
   justify-items: center;
   z-index: 120;
 }
-  
+
 .hamburger1 div {
   background-color: rgb(61, 61, 61);
   position: relative;
@@ -50,19 +50,19 @@ h3 {
 
 #toggle1:checked + .hamburger1 .top {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   margin-top: 22.5px;
 }
 
 #toggle1:checked + .hamburger1 .meat {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   margin-top: -5px;
 }
 
 #toggle1:checked + .hamburger1 .bottom {
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
 #toggle1:checked ~ .menu1 {
@@ -72,9 +72,9 @@ h3 {
 /* Menu */
 .menu1 {
   position: absolute;
-  border-radius: .5em;
+  border-radius: 0.5em;
   min-width: 7em;
-  background-color: #CCC8AA;
+  background-color: #ccc8aa;
   margin: 10px 0px 0px -45px;
   /* margin-left: -40px; */
   display: -ms-grid;
@@ -87,7 +87,7 @@ h3 {
   text-align: center;
   height: 0px;
   overflow: hidden;
-  transition: height .4s ease;
+  transition: height 0.4s ease;
   z-index: 120;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -105,26 +105,28 @@ h3 {
   width: 100%;
   margin: 0;
   padding: 10px 0;
-  font: 700 20px 'Oswald', sans-serif;
+  font:
+    700 20px "Oswald",
+    sans-serif;
   color: #191717;
 }
 
 .link1:hover {
   background-color: #191717;
-  color: #F1EFEF;
+  color: #f1efef;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 /* about */
-.about{
+.about {
   padding: 10px;
 }
-.two-column{
+.two-column {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-img{
+img {
   max-width: 300px;
 }
