@@ -1,7 +1,6 @@
 # shelton
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This ember app is made as a personal webpage for my good friend, who does fine woodworking.
 
 ## Prerequisites
 
