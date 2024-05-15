@@ -78,5 +78,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "ember-cli-sass": "^11.0.1",
+    "sass": "^1.77.1"
   }
 }
