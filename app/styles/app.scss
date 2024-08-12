@@ -24,7 +24,7 @@ h3 {
 }
 
 /* hamburger */
-.hamburger1 {
+.hamburger {
   height: 30px;
   margin: 7px;
   display: -ms-grid;
@@ -34,7 +34,7 @@ h3 {
   z-index: 120;
 }
 
-.hamburger1 div {
+.hamburger div {
   background-color: rgb(61, 61, 61);
   position: relative;
   width: 30px;
@@ -44,9 +44,9 @@ h3 {
   transition: all 0.2s ease-in-out;
 }
 
-#toggle1 {
-  display: none;
-}
+// #toggle1 {
+//   display: none;
+// }
 
 #toggle1:checked + .hamburger1 .top {
   -webkit-transform: rotate(-45deg);

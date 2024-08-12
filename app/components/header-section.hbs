@@ -4,12 +4,13 @@
 
   <section class="p-menu1">
     <nav id="navbar" class="navigation" role="navigation">
-      <input id="toggle1" type="checkbox" />
-      <label class="hamburger1" for="toggle1">
-        <div class="top"></div>
-        <div class="meat"></div>
-        <div class="bottom"></div>
-      </label>
+      <button id="toggle1" {{on "click" this.toggleHamburger}}>
+        <label class="hamburger" for="toggle1">
+          <div class="top"></div>
+          <div class="meat"></div>
+          <div class="bottom"></div>
+        </label>
+      </button>
       <div class="menu1">
         <LinkTo @route="meristem" class="link1">meristem</LinkTo>
         <LinkTo @route="shelton" class="link1">shelton</LinkTo>
