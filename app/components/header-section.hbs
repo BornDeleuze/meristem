@@ -1,8 +1,6 @@
 
 <header class="header">
   <h3>Shelton Woodworking</h3>
-
-  <div {{on-click-outside this.toggleHamburger}}>
     <section class="p-menu1">
       <nav id="navbar" class="navigation" role="navigation">
         <button id="toggle1" type="button" {{on "click" this.toggleHamburger}}>
@@ -13,7 +11,7 @@
               <div class="bottom"></div>
             </label>
           {{else}}
-            <div class="menu1">
+            <div class="menu1" {{on-click-outside this.hideHamburger}}>
               <LinkTo @route="meristem" class="link1">meristem</LinkTo>
               <LinkTo @route="shelton" class="link1">shelton</LinkTo>
               <LinkTo @route="contact" class="link1">contact</LinkTo>
@@ -22,5 +20,4 @@
         </button>
       </nav>
     </section>
-  </div>
 </header>

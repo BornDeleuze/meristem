@@ -10,4 +10,9 @@ export default class CounterComponent extends Component {
     this.expandHamburger = !this.expandHamburger;
     console.log('welp');
   }
+  @action
+  hideHamburger() {
+    this.expandHamburger = false;
+    console.log('welo');
+  }
 }
