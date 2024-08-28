@@ -6,13 +6,8 @@ export default class CounterComponent extends Component {
   @tracked expandHamburger = false;
 
   @action
-  showHamburger() {
-    this.expandHamburger = true
+  toggleHamburger() {
+    this.expandHamburger = !this.expandHamburger;
     console.log('welp');
-  }
-  @action
-  hideHamburger() {
-    this.expandHamburger = false
-    console.log('welo');
   }
 }
