@@ -3,20 +3,24 @@
   <h3>Shelton Woodworking</h3>
     <section class="p-menu1">
       <nav id="navbar" class="navigation" role="navigation">
-        <button id="toggle1" type="button" {{on "click" this.toggleHamburger}}>
-          {{#unless this.expandHamburger}}
-            <label class="hamburger" for="toggle1">
-              <div class="top"></div>
-              <div class="meat"></div>
-              <div class="bottom"></div>
-            </label>
-          {{else}}
-            <div class="menu1" {{on-click-outside this.hideHamburger}}>
-              <LinkTo @route="meristem" class="link1">meristem</LinkTo>
-              <LinkTo @route="shelton" class="link1">shelton</LinkTo>
-              <LinkTo @route="contact" class="link1">contact</LinkTo>
+        <button class="dropbtn" type="button" {{on "click" this.toggleHamburger}}>
+          {{!-- {{#unless this.expandHamburger}} --}}
+            <div class="hamburger">
+              <div class="bars"></div>
+              <div class="bars"></div>
+              <div class="bars"></div>
             </div>
-          {{/unless}}
+          {{!-- {{else}} --}}
+          {{#if this.expandHamburger}}
+            <div class="dropdown">
+              <div class="dropdown-content" {{on-click-outside this.hideHamburger}}>
+                <LinkTo @route="meristem" class="link1">meristem</LinkTo>
+                <LinkTo @route="shelton" class="link1">shelton</LinkTo>
+                <LinkTo @route="contact" class="link1">contact</LinkTo>
+              </div>
+            </div>
+            {{/if}}
+          {{!-- {{/unless}} --}}
         </button>
       </nav>
     </section>

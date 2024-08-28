@@ -2,11 +2,24 @@
 /* main colors: white #F1EFEF green #CCC8AA charcoal #7D7C7C black #191717 */
 /* app/styles.css */
 body {
-  font-family: futura-pt, futura, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f1efef;
 }
 
 header {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: futura-pt;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 3.9px;
+  text-transform: uppercase;
+  color: #3e4646;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1em;
   margin-left: auto;
   margin-right: auto;
   background-color: #f1efef;
@@ -23,99 +36,72 @@ h3 {
   margin: 0;
 }
 
+/* drop button */
+.dropbtn {
+  background-color: #F1EFEF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  box-sizing: border-box;
+}
 /* hamburger */
 .hamburger {
-  height: 30px;
-  margin: 7px;
   display: -ms-grid;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   z-index: 120;
+  background-color: #F1EFEF;
+  position: relative;
 }
 
-.hamburger div {
+.bars {
   background-color: rgb(61, 61, 61);
   position: relative;
   width: 30px;
   height: 5px;
-  margin-top: 7px;
+  margin-top: 4px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-// #toggle1 {
-//   display: none;
-// }
-
-// #toggle1:checked + .hamburger1 .top {
-//   -webkit-transform: rotate(-45deg);
-//   transform: rotate(-45deg);
-//   margin-top: 22.5px;
-// }
-
-// #toggle1:checked + .hamburger1 .meat {
-//   -webkit-transform: rotate(45deg);
-//   transform: rotate(45deg);
-//   margin-top: -5px;
-// }
-
-// #toggle1:checked + .hamburger1 .bottom {
-//   -webkit-transform: scale(0);
-//   transform: scale(0);
-// }
-
-// #toggle1:checked ~ .menu1 {
-//   height: 340px;
-// }
-
-/* Menu */
-.menu1 {
+/* dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
   position: absolute;
-  border-radius: 0.5em;
-  min-width: 7em;
-  background-color: #ccc8aa;
-  margin: 10px 0px 0px -45px;
-  /* margin-left: -40px; */
-  display: -ms-grid;
-  display: grid;
-  grid-template-rows: 1fr repeat(4, 0.5fr);
-  grid-row-gap: 25px;
-  list-style: none;
-  clear: both;
-  width: auto;
-  text-align: center;
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.4s ease;
-  z-index: 120;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  right: 0; /* Align dropdown content to the right */
+  top: 100%; /* Position dropdown content below the button */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
-.menu1 a:first-child {
-  margin-top: 40px;
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.menu1 a:last-child {
-  margin-bottom: 40px;
-}
-
-.link1 {
-  width: 100%;
-  margin: 0;
-  padding: 10px 0;
-  font:
-    700 20px "Oswald",
-    sans-serif;
-  color: #191717;
-}
-
-.link1:hover {
-  background-color: #191717;
-  color: #f1efef;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
 
 /* about */
