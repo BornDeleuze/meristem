@@ -4,21 +4,23 @@
 
   <section class="p-menu1">
     <nav id="navbar" class="navigation" role="navigation">
-      <button id="toggle1" {{on "click" this.toggleHamburger}}>
-      {{#if this.expandHamburger}}
-        <label class="hamburger" for="toggle1">
-          <div class="top"></div>
-          <div class="meat"></div>
-          <div class="bottom"></div>
-        </label>
+      {{#unless this.expandHamburger}}
+        <button id="toggle1" type="button" {{on "click" this.showHamburger}}>
+          <label class="hamburger" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+          </label>
+        </button>
       {{else}}
-      <div class="menu1">
-        <LinkTo @route="meristem" class="link1">meristem</LinkTo>
-        <LinkTo @route="shelton" class="link1">shelton</LinkTo>
-        <LinkTo @route="contact" class="link1">contact</LinkTo>
-      </div>
-      {{/if}}
+      <button id="toggle1" type="button" {{on-click-outside this.hideHamburger}}>
+        <div class="menu1">
+          <LinkTo @route="meristem" class="link1">meristem</LinkTo>
+          <LinkTo @route="shelton" class="link1">shelton</LinkTo>
+          <LinkTo @route="contact" class="link1">contact</LinkTo>
+        </div>
       </button>
+      {{/unless}}
     </nav>
   </section>
 

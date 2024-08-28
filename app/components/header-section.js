@@ -3,11 +3,16 @@ import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 
 export default class CounterComponent extends Component {
-  @tracked expandHamburger = true;
-  
+  @tracked expandHamburger = false;
+
   @action
-  toggleHamburger() {
-    this.expandHamburger = !this.expandHamburger;
-   console.log('welp')
+  showHamburger() {
+    this.expandHamburger = true
+    console.log('welp');
+  }
+  @action
+  hideHamburger() {
+    this.expandHamburger = false
+    console.log('welo');
   }
 }
