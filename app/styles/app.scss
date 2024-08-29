@@ -154,6 +154,18 @@ h3 {
 .twocolumnimg {
   max-width: 300px;
 }
+@media screen and (max-width: 800px) {
+  .two-column {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3em;
+  }
+  .twocolumnimg {
+    max-width: 300px;
+  } 
+}
 .equal{
   flex-grow: 1;
 }
