@@ -26,7 +26,6 @@ header {
   color: #191717;
   padding: 20px;
   display: flex;
-  max-width: 1000px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 3px solid #ccc8aa;
@@ -34,6 +33,10 @@ header {
 
 h3 {
   margin: 0;
+}
+
+.center-text{
+  text-align: center;
 }
 
 /* drop button */
@@ -105,12 +108,32 @@ h3 {
   background-color: #3e8e41;
 }
 
-/* about */
-.about {
-  padding: 2em 2em 2em 2em;
+/* page content */
+.content{
+  padding: 0em 2em 0em 2em;
 }
+
+/* home */
+.meristem{
+  text-align: center;
+}
+.gallery{
+  display: flex;
+  max-width: 100%;
+  img{
+    max-width: 30%;
+    object-fit: cover;
+  }
+}
+.right{
+  margin-left: auto;
+  max-width: 70%;
+  text-align: right;
+}
+
+/* about */
 .section{
-  padding: 0em 0 1em 0;
+  padding: 1em 0 1em 0;
 }
 .main {
   padding-bottom: 2em;
