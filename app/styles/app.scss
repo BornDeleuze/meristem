@@ -29,6 +29,11 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 3px solid #ccc8aa;
+  a{
+    text-decoration: none;
+    cursor: default;
+    color: #191717;
+  }
 }
 
 h3 {
