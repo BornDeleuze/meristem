@@ -4,6 +4,7 @@
 body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f1efef;
+  margin: 0;
 }
 
 header {
@@ -195,5 +196,34 @@ h3 {
     padding: 10px;
     position: relative;
     width: 100%;
+  }  
+}
+footer{
+  padding: .5em;
+  height: 7em;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  .nav{
+    width: 3em;
+  }
+  .signature{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    bottom:0;
+    font-size:.5em;
+    color: #F1EFEF;
+    
+  }
+  .social{
+    width: 3em;
+    padding:1em;
+    float:right;
+    .insta-logo{
+      float:right;
+      width: 1.5em;
+      fill:#F1EFEF
+    }
   }
 }
