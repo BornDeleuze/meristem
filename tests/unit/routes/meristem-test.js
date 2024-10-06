@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { setupTest } from 'shelton/tests/helpers';
+import { setupTest } from 'meristem/tests/helpers';
 
 module('Unit | Route | meristem', function (hooks) {
   setupTest(hooks);
