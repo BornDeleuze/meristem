@@ -199,13 +199,13 @@ h3 {
   }  
 }
 footer{
-  height: 5em;
+  padding: .5em;
+  height: 7em;
   background-color: #000;
   display: flex;
   justify-content: space-between;
-  .social{
-    padding:1em;
-    float:right;
+  .nav{
+    width: 3em;
   }
   .signature{
     display: flex;
@@ -214,10 +214,16 @@ footer{
     bottom:0;
     font-size:.5em;
     color: #F1EFEF;
-
+    
   }
-  .insta-logo{
-    width: 1.5em;
-    fill:#F1EFEF
+  .social{
+    width: 3em;
+    padding:1em;
+    float:right;
+    .insta-logo{
+      float:right;
+      width: 1.5em;
+      fill:#F1EFEF
+    }
   }
 }
