@@ -238,9 +238,16 @@ footer{
 }
 // work
 .work{
-    img{
-    max-width: 20%;
-    max-height: 1000px;
-    object-fit: cover;
+  .left{
+  margin-left: auto;
+  max-width: 70%;
+  }  
+  .right{
+  margin-left: auto;
+  max-width: 70%;
   }
+  //   img{
+  //   max-height: 1000px;
+  //   object-fit: cover;
+  // }
 }
