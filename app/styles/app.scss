@@ -127,7 +127,7 @@ h3 {
   padding-top: 2px;
   border-bottom: 3px solid #ccc8aa; 
 }
-.banner{
+#banner{
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -166,7 +166,6 @@ h3 {
 }
 
 /* about */
-.about{
   .section{
     padding: 1em 0 1em 0;
   }
@@ -200,7 +199,6 @@ h3 {
     .twocolumnimg {
       max-width: 300px;
     } 
-  }
   .equal{
     flex-grow: 1;
   }
