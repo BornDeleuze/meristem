@@ -80,7 +80,6 @@ h3 {
 /* dropdown */
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -92,6 +91,7 @@ h3 {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 5px;
+  margin: .2em 0.2em 0em 0em;
 }
 .dropdown-content a {
   color: black;
