@@ -80,7 +80,6 @@ h3 {
 /* dropdown */
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -92,6 +91,7 @@ h3 {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 5px;
+  margin: .2em 0.2em 0em 0em;
 }
 .dropdown-content a {
   color: black;
@@ -184,6 +184,7 @@ h3 {
     display: flex;
     align-items: center;
     gap: 3em;
+    justify-content: center;
   }
   .twocolumnimg {
     max-width: 300px;
@@ -199,21 +200,23 @@ h3 {
     .twocolumnimg {
       max-width: 300px;
     } 
-  .equal{
-    flex-grow: 1;
+    .reverse{
+      flex-direction: column;
+    }
   }
   .call{
-    font-size: 2.5em
+    font-size: 2em;
+    font-weight: 400;
+  }
+  .form-section{
+    justify-content: space-evenly;
   }
   .form{
     display: flex;
     flex-direction: column;
-    gap:1em;
-    label{
-      margin-bottom: 4em;
-    }
+    gap: 1em;
     input{
-      margin-top:1em;
+      margin-top:.2em;
       background-color: #fafafa;
       border: 1px solid #a9a9a9;
       box-sizing: border-box;
@@ -223,9 +226,27 @@ h3 {
       padding: 10px;
       position: relative;
       width: 100%;
+      border-radius: .5em;
     }  
+  .field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
-}
+  .field button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ccc8aa;
+    border: none;
+    cursor: pointer;
+    border-radius: .5em;
+  }
+
+  }
+  .equal{
+    flex-grow: 1;
+  }
 
 // footer section
 footer{
