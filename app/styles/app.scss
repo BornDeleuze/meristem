@@ -5,6 +5,7 @@ body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f1efef;
   margin: 0;
+  color: #333;
 }
 
 header {
@@ -34,6 +35,9 @@ header {
     text-decoration: none;
     cursor: default;
     color: #191717;
+  }
+  p{
+    color: #333;
   }
 }
 
