@@ -6,8 +6,21 @@
   <p class="center-text" id="title">meristem</p>
   <i>The actively dividing and multiplying cells that differentiate to form all parts of a plant. Found in the root tips, branch tips and lateral growth areas, the meristem is where the magic of plant growth happens. It’s the starting point for the life of a tree, and thus the starting point for the furniture I build.</i>
 <br><br>
-  <div class="gallery section">
-    <Carousel @images={{array "/images/barstools2.jpg" "/images/armoire.jpg" "/images/blanketchest3.jpg"}} />
+  <div class="section">
+    <Carousel @images={{array 
+      "/images/barstools2.jpg" 
+      "/images/armoire.jpg"
+      "/images/blanketchest3.jpg"
+      "/images/desk1.jpg"
+      "/images/windsorchair2a.jpg"
+      "/images/alderbench1.jpg"
+      "/images/process4.jpg"
+      "/images/maplebench2detail.jpg"
+      "/images/kumikowallcabinet.jpg"
+    }} />
+    {{!-- <img src="/images/process4.jpg"/>
+    <img src="/images/maplebench2detail.jpg"/>
+    <img src="/images/kumikowallcabinet.jpg"/> --}}
 
     {{!-- <img src="/images/barstools2.jpg"/>
     <img src="/images/armoire.jpg"/>
@@ -18,11 +31,11 @@
     I characterize my furniture design style as wood-forward; showcasing the wood for what it is, without diminishing or masking it. <br/>
     The wood itself is the centerpiece and the aesthetic of my work.  
   </p>
-  <div class="gallery section">
+  {{!-- <div class="gallery section">
     <img src="/images/desk1.jpg"/>
     <img src="/images/windsorchair2a.jpg"/>
     <img src="/images/alderbench1.jpg"/>
-  </div>
+  </div> --}}
   <p>
   Wood is a living medium, and the furniture maker an artist who works that life into new forms. <br/>
   Furniture making is not a static activity, with dead inputs and stagnant outcomes.
@@ -33,10 +46,10 @@
   <p>
   After all, furniture is but one possibility in the lifespan of a tree.
   </p>
-  <div class="gallery section">
+  {{!-- <div class="gallery section">
     <img src="/images/process4.jpg"/>
     <img src="/images/maplebench2detail.jpg"/>
     <img src="/images/kumikowallcabinet.jpg"/>
-  </div>
+  </div> --}}
 </div>
 {{outlet}}

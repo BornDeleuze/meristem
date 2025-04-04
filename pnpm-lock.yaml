@@ -115,6 +115,9 @@ devDependencies:
   ember-template-lint:
     specifier: ^5.13.0
     version: 5.13.0
+  ember-truth-helpers:
+    specifier: ^4.0.3
+    version: 4.0.3(ember-source@5.7.0)
   ember-welcome-page:
     specifier: ^7.0.2
     version: 7.0.2
@@ -5576,6 +5579,24 @@ packages:
       - supports-color
     dev: true
 
+  /ember-cli-typescript@5.3.0:
+    resolution: {integrity: sha512-gFA+ZwmsvvFwo2Jz/B9GMduEn+fPoGb69qWGP0Tp3+Tu5xypDtIKVSZ5086I3Cr19cLXD4HkrOR3YQvdUKzAkQ==}
+    engines: {node: '>= 12.*'}
+    dependencies:
+      ansi-to-html: 0.6.15
+      broccoli-stew: 3.0.0
+      debug: 4.3.6
+      execa: 4.1.0
+      fs-extra: 9.1.0
+      resolve: 1.22.8
+      rsvp: 4.8.5
+      semver: 7.6.3
+      stagehand: 1.0.1
+      walk-sync: 2.2.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /ember-cli-version-checker@2.2.0:
     resolution: {integrity: sha512-G+KtYIVlSOWGcNaTFHk76xR4GdzDLzAS4uxZUKdASuFX0KJE43C6DaqL+y3VTpUFLI2FIkAS6HZ4I1YBi+S3hg==}
     engines: {node: '>= 4'}
@@ -5850,6 +5871,20 @@ packages:
       - supports-color
     dev: true
 
+  /ember-functions-as-helper-polyfill@2.1.2(ember-source@5.7.0):
+    resolution: {integrity: sha512-yvW6xykvZEIYzzwlrC/g9yu6LtLkkj5F+ho6U+BDxN1uREMgoMOZnji7sSILn5ITVpaJ055DPcO+utEFD7IZOA==}
+    engines: {node: '>= 14.0.0'}
+    peerDependencies:
+      ember-source: ^3.25.0 || >=4.0.0
+    dependencies:
+      ember-cli-babel: 7.26.11
+      ember-cli-typescript: 5.3.0
+      ember-cli-version-checker: 5.1.2
+      ember-source: 5.7.0(@babel/core@7.25.2)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.94.0)
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /ember-get-config@2.1.1:
     resolution: {integrity: sha512-uNmv1cPG/4qsac8oIf5txJ2FZ8p88LEpG4P3dNcjsJS98Y8hd0GPMFwVqpnzI78Lz7VYRGQWY4jnE4qm5R3j4g==}
     engines: {node: 12.* || 14.* || >= 16}
@@ -6094,6 +6129,18 @@ packages:
     dependencies:
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 5.7.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /ember-truth-helpers@4.0.3(ember-source@5.7.0):
+    resolution: {integrity: sha512-T6Ogd3pk9FxYiZfSxdjgn3Hb3Ksqgw7CD23V9qfig9jktNdkNEHo4+3PA3cSD/+3a2kdH3KmNvKyarVuzdtEkA==}
+    peerDependencies:
+      ember-source: '>=3.28.0'
+    dependencies:
+      '@embroider/addon-shim': 1.8.9
+      ember-functions-as-helper-polyfill: 2.1.2(ember-source@5.7.0)
+      ember-source: 5.7.0(@babel/core@7.25.2)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.94.0)
     transitivePeerDependencies:
       - supports-color
     dev: true

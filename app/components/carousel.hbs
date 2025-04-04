@@ -1,6 +1,16 @@
-<!-- app/components/image-carousel.hbs -->
-<div class="carousel">
+<div class="carousel {{@className}}" {{this.resizeModifier}}>
   <button {{on "click" this.prev}} class="prev-button">‹</button>
-  <img src={{this.currentImage}} alt="Carousel Image" class="carousel-image" />
+  <div class="carousel-images">
+    {{#each this.visibleImages as |image|}}
+      <img src={{image}} alt="Carousel Image" class="carousel-image" />
+    {{/each}}
+  </div>
   <button {{on "click" this.next}} class="next-button">›</button>
+
+  <div class="thumbnails">
+    {{#each this.args.images as |image index|}}
+      <img src={{image}} alt="Thumbnail" class="thumbnail {{if (eq index this.currentIndex) 'active'}}"
+           {{on "click" (fn this.selectImage index)}} />
+    {{/each}}
+  </div>
 </div>
