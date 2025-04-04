@@ -1,0 +1,6 @@
+<!-- app/components/image-carousel.hbs -->
+<div class="carousel">
+  <button {{on "click" this.prev}} class="prev-button">‹</button>
+  <img src={{this.currentImage}} alt="Carousel Image" class="carousel-image" />
+  <button {{on "click" this.next}} class="next-button">›</button>
+</div>
