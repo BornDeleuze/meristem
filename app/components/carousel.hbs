@@ -2,15 +2,16 @@
   <button {{on "click" this.prev}} class="prev-button">‹</button>
   <div class="carousel-images">
     {{#each this.visibleImages as |image|}}
-      <img src={{image}} alt="Carousel Image" class="carousel-image" />
+      <img src={{image.src}} alt={{image.alt}} class="carousel-image" />
     {{/each}}
   </div>
   <button {{on "click" this.next}} class="next-button">›</button>
 
   <div class="thumbnails">
     {{#each this.args.images as |image index|}}
-      <img src={{image}} alt="Thumbnail" class="thumbnail {{if (eq index this.currentIndex) 'active'}}"
-           {{on "click" (fn this.selectImage index)}} />
+      <img src={{image.src}} alt={{image.alt}} 
+        class="thumbnail {{if (eq index this.currentIndex) 'active'}}"
+        {{on "click" (fn this.selectImage index)}}/>
     {{/each}}
   </div>
 </div>
