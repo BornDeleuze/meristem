@@ -1,11 +1,15 @@
 <div class="carousel {{@className}}" {{this.resizeModifier}}>
-  <button {{on "click" this.prev}} class="prev-button">‹</button>
+  <button class="prev-button" type="button" {{on "click" this.prev}}>‹</button>
   <div class="carousel-images">
-    {{#each this.visibleImages as |image|}}
-      <img src={{image.src}} alt={{image.alt}} class="carousel-image" />
+    {{#each this.visibleImages as |image index|}}
+      <img 
+        src={{image.src}} 
+        alt={{image.alt}} 
+        class="carousel-image {{if (eq (add this.currentIndex index) this.centerVisibleIndex) 'focused'}}" 
+      />
     {{/each}}
   </div>
-  <button {{on "click" this.next}} class="next-button">›</button>
+  <button class="next-button" type="button" {{on "click" this.next}}>›</button>
 
   <div class="thumbnails">
     {{#each this.args.images as |image index|}}

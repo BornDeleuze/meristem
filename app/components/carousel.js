@@ -2,8 +2,7 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
-import { modifier } from 'ember-modifier';  // Make sure this import is present
-
+import { modifier } from 'ember-modifier';
 export default class ImageCarouselComponent extends Component {
   @tracked currentIndex = 0;
   @tracked isWideScreen = window.innerWidth > 800;
@@ -24,17 +23,30 @@ export default class ImageCarouselComponent extends Component {
   }
 
   get visibleImages() {
-    return this.isWideScreen
-      ? this.args.images.slice(this.currentIndex, this.currentIndex + 3)
-      : [this.args.images[this.currentIndex]];
+    const images = this.args.images;
+    const total = images.length;
+
+    if (this.isWideScreen) {
+      const leftIndex = (this.currentIndex - 1 + total) % total;
+      const centerIndex = this.currentIndex;
+      const rightIndex = (this.currentIndex + 1) % total;
+
+      return [
+        images[leftIndex],
+        images[centerIndex],
+        images[rightIndex],
+      ];
+    } else {
+      return [images[this.currentIndex]];
+    }
+  }
+
+  get centerVisibleIndex() {
+    return this.isWideScreen ? this.currentIndex + 1 : this.currentIndex;
   }
 
   @action next() {
-    if (this.isWideScreen) {
-      this.currentIndex = (this.currentIndex + 3) % this.totalSlides;
-    } else {
       this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
-    }
   }
 
   @action prev() {
