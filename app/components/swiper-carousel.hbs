@@ -1,19 +1,11 @@
-{{!-- <div {{did-insert (fn this.setupSwiper)}}>
+<div {{did-insert (fn this.setupSwiper)}}>
   <div class="swiper">
     <div class="swiper-wrapper">
-      {{#each @images as |img|}}
+      {{#each @images as |image|}}
         <div class="swiper-slide">
-          <img src={{img.src}} alt={{img.alt}} />
+          <img src="{{image.src}}"/>
         </div>
       {{/each}}
     </div>
   </div>
-</div> --}}
-
-{{!-- Debugging output --}}
-{{#each @images as |img|}}
-  <div class="swiper-slide">
-    <img src={{img.src}} alt={{img.alt}} />
-    <p>{{img.src}} - {{img.alt}}</p> <!-- Debugging output -->
-  </div>
-{{/each}}
+</div>

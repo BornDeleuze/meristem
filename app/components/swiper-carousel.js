@@ -9,7 +9,7 @@ export default class SwiperCarouselComponent extends Component {
 
   @action
   setupSwiper(element) {
-    console.log("helllooooo!!")
+  console.log("images:", this.args.images);
     // Add a small delay or wait for next render tick
     requestAnimationFrame(() => {
       const swiperEl = element.querySelector('.swiper');
@@ -21,7 +21,7 @@ export default class SwiperCarouselComponent extends Component {
 
       this.swiperInstance = new Swiper(swiperEl, {
         loop: true,
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 10,
         pagination: {
           el: swiperEl.querySelector('.swiper-pagination'),
