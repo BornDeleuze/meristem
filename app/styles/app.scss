@@ -140,34 +140,38 @@ h3 {
   font-weight: 600;
   font-size: 1.1em;
 }
+
 .gallery{
-  display: flex;
-  max-width: 100%;
-  img{
-    max-width: 30%;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-  }
-    img{
-    width: 70%;
-    display: block;
-  }
-  /* mobile */
-  @media screen and (max-width: 800px) {
-    flex-direction: column;
-    row-gap: 10px;
-    img{
-    max-width: 100%;
-    object-fit: cover;
-  }
-  }
-  .right{
-    margin-left: auto;
-    max-width: 70%;
-    text-align: right;
-  }
+  height: 10em;
 }
+// .gallery{
+//   display: flex;
+//   max-width: 100%;
+//   img{
+//     max-width: 30%;
+//     object-fit: cover;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+//     img{
+//     width: 70%;
+//     display: block;
+//   }
+//   /* mobile */
+//   @media screen and (max-width: 800px) {
+//     flex-direction: column;
+//     row-gap: 10px;
+//     img{
+//     max-width: 100%;
+//     object-fit: cover;
+//   }
+//   }
+//   .right{
+//     margin-left: auto;
+//     max-width: 70%;
+//     text-align: right;
+//   }
+// }
 
 /* about */
   .section{
@@ -293,5 +297,18 @@ footer{
       margin-left: auto;
       max-width: 70%;
     }
+  }
+}
+
+// swiper
+
+.swiper-wrapper {
+  align-items: center; /* add this will all relevant prefixes */
+}
+
+@media (max-width: 767px) {
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    display: none
   }
 }
