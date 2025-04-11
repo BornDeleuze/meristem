@@ -1,0 +1,16 @@
+<div class="swiper-container" {{did-insert (fn this.setupSwiper)}}>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      {{#each @images as |image|}}
+        <div class="swiper-slide">
+          <img src="{{image.src}}" alt="{{image.alt}}" />
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
