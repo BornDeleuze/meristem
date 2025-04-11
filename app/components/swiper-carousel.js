@@ -21,15 +21,19 @@ export default class SwiperCarouselComponent extends Component {
 
       this.swiperInstance = new Swiper(swiperEl, {
         loop: true,
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 10,
-        pagination: {
-          el: swiperEl.querySelector('.swiper-pagination'),
-          clickable: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
         },
         navigation: {
           nextEl: swiperEl.querySelector('.swiper-button-next'),
           prevEl: swiperEl.querySelector('.swiper-button-prev'),
+        },
+        pagination: {
+          el: swiperEl.querySelector('.swiper-pagination'),
+          clickable: true,
         },
       });
     });
