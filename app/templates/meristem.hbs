@@ -6,7 +6,7 @@
   <p class="center-text" id="title">meristem</p>
   <p><i>The actively dividing and multiplying cells that differentiate to form all parts of a plant. Found in the root tips, branch tips and lateral growth areas, the meristem is where the magic of plant growth happens. It’s the starting point for the life of a tree, and thus the starting point for the furniture I build.</i></p>
   <div class="section">
-  <Carousel @className="meristem-gallery" @images={{array 
+  {{!-- <Carousel @className="meristem-gallery" @images={{array 
     (hash src="/images/barstools2.jpg" alt="A pair of winsor barstools")
     (hash src="/images/armoire.jpg" alt="A tall black and natural grain wooden armoire")
     (hash src="/images/blanketchest3.jpg" alt="Blanket chest with with grained panels")
@@ -16,7 +16,20 @@
     (hash src="/images/process4.jpg" alt="Workbench with tools mid-project")
     (hash src="/images/maplebench2detail.jpg" alt="Detail of maple bench joinery")
     (hash src="/images/kumikowallcabinet.jpg" alt="Kumiko-style wall cabinet")  
-    }} />
+    }} /> --}}
+
+  <SwiperCarousel @images={{array 
+    (hash src="/images/barstools2.jpg" alt="A pair of winsor barstools")
+    (hash src="/images/armoire.jpg" alt="A tall black and natural grain wooden armoire")
+    (hash src="/images/blanketchest3.jpg" alt="Blanket chest with grained panels")
+    (hash src="/images/desk1.jpg" alt="Drafting desk with tapered legs")
+    (hash src="/images/windsorchair2a.jpg" alt="Classic Windsor chair")
+    (hash src="/images/alderbench1.jpg" alt="Alder wood bench with live edge")
+    (hash src="/images/process4.jpg" alt="Workbench with tools mid-project")
+    (hash src="/images/maplebench2detail.jpg" alt="Detail of maple bench joinery")
+    (hash src="/images/kumikowallcabinet.jpg" alt="Kumiko-style wall cabinet")  
+}} />
+
     {{!-- <img src="/images/process4.jpg"/>
     <img src="/images/maplebench2detail.jpg"/>
     <img src="/images/kumikowallcabinet.jpg"/> --}}
