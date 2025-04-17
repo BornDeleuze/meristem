@@ -9,45 +9,40 @@ export default class SwiperCarouselComponent extends Component {
 
   @action
   setupSwiper(element) {
-    requestAnimationFrame(() => {
-      const swiperEl = element.querySelector('.swiper');
+    const swiperEl = element.querySelector('.swiper');
 
-      if (!swiperEl) {
-        console.error('Swiper root element not found');
-        return;
-      }
+    if (!swiperEl) {
+      console.error('Swiper root element not found');
+      return;
+    }
 
-      this.swiperInstance = new Swiper(swiperEl, {
-        loop: true,
-        slidesPerView: 3,
-        spaceBetween: 10,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
+    this.swiperInstance = new Swiper(swiperEl, {
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: swiperEl.querySelector('.swiper-button-next'),
+        prevEl: swiperEl.querySelector('.swiper-button-prev'),
+      },
+      pagination: {
+        el: swiperEl.querySelector('.swiper-pagination'),
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
         },
-        navigation: {
-          nextEl: swiperEl.querySelector('.swiper-button-next'),
-          prevEl: swiperEl.querySelector('.swiper-button-prev'),
+        768: {
+          slidesPerView: 2,
         },
-        pagination: {
-          el: swiperEl.querySelector('.swiper-pagination'),
-          clickable: true,
-        },
-        breakpoints: {
-          // when window width is >= 0px
-          0: {
-            slidesPerView: 1,
-          },
-          // when window width is >= 768px
-          768: {
-            slidesPerView: 2,
-          },
-          // when window width is >= 1024px
-          1024: {
-            slidesPerView: 3,
-          }
-        },
-      });
+        1024: {
+          slidesPerView: 3,
+        }
+      },
     });
   }
 }
