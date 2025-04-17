@@ -1,27 +1,30 @@
-
 <header class="header">
   <LinkTo @route="meristem">
     <h3>Meristem Woodworks</h3>
   </LinkTo>
-  
+
   <section class="p-menu1">
     <nav id="navbar" class="navigation" role="navigation">
-      <button class="dropbtn" type="button" {{on "click" this.toggleHamburger}}>
-          <div class="hamburger">
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
+      <div class="menu-wrapper">
+        <button class="dropbtn ignore-outside" type="button" {{on "click" this.toggleHamburger}}>
+          <div class="hamburger {{if this.expandHamburger "open"}}">
+            <div class="bars bar1"></div>
+            <div class="bars bar2"></div>
+            <div class="bars bar3"></div>
           </div>
-        {{#if this.expandHamburger}}
-          <div class="dropdown">
-            <div class="dropdown-content" {{on-click-outside this.hideHamburger}}>
-              <LinkTo @route="meristem" class="link1">meristem</LinkTo>
-              <LinkTo @route="about" class="link1">about</LinkTo>
-              <LinkTo @route="work" class="link1">process</LinkTo>
-            </div>
+        </button>
+
+        <div class="dropdown">
+          <div 
+            class="dropdown-content {{if this.expandHamburger "expand-dropdown"}}"
+            {{on-click-outside this.hideHamburger exceptSelector=".ignore-outside"}}
+          >
+            <LinkTo @route="meristem" class="link1">meristem</LinkTo>
+            <LinkTo @route="about" class="link1">about</LinkTo>
+            <LinkTo @route="work" class="link1">process</LinkTo>
           </div>
-          {{/if}}
-      </button>
+        </div>
+      </div>
     </nav>
   </section>
 </header>
