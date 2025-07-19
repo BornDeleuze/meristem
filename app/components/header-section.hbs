@@ -19,9 +19,9 @@
             class="dropdown-content {{if this.expandHamburger "expand-dropdown"}}"
             {{on-click-outside this.hideHamburger exceptSelector=".ignore-outside"}}
           >
-            <LinkTo @route="meristem" class="link1">meristem</LinkTo>
-            <LinkTo @route="about" class="link1">about</LinkTo>
-            <LinkTo @route="work" class="link1">process</LinkTo>
+            <LinkTo @route="meristem" class="link1" {{on "click" this.hideHamburger}}>meristem</LinkTo>
+            <LinkTo @route="about" class="link1" {{on "click" this.hideHamburger}}>about</LinkTo>
+            <LinkTo @route="work" class="link1" {{on "click" this.hideHamburger}}>process</LinkTo>
           </div>
         </div>
       </div>
