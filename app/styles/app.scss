@@ -245,48 +245,84 @@ h3 {
       flex-direction: column;
     }
   }
-  .call{
-    font-size: 2em;
-    font-weight: 400;
-  }
   .form-section{
-    justify-content: space-evenly;
-  }
-  .form{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    input{
-      margin-top:.2em;
-      background-color: #fafafa;
-      border: 1px solid #a9a9a9;
-      box-sizing: border-box;
-      color: #000;
-      height: 46px;
-      height: auto;
-      padding: 10px;
-      position: relative;
-      width: 100%;
-      border-radius: .5em;
-    }  
-  .field {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-  .field button {
-    width: 100%;
-    padding: 10px;
-    background-color: #ccc8aa;
-    border: none;
-    cursor: pointer;
-    border-radius: .5em;
-  }
+    padding: 1em;
+    .call{
+      text-align: right;
+      font-size: 2em;
+      flex-grow: 1;
+      font-weight: 400;
+    }
+    .form {
+      flex-grow: 4;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 2em;
+      border-radius: 1em;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      @media screen and (max-width: 800px) {
+        width:80%;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 0.3em;
+        padding: 0.2em;
 
-  }
-  .equal{
-    flex-grow: 1;
+        label {
+          span {
+            font-weight: 600;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            color: #7d7c7c;
+            letter-spacing: 0.05em;
+          }
+        }
+
+        input,
+        textarea {
+          background-color: #fafafa;
+          border: 1px solid #ccc8aa;
+          border-radius: 0.5em;
+          padding: 12px;
+          font-size: 1em;
+          font-family: inherit;
+          color: #191717;
+          transition: border 0.2s, box-shadow 0.2s;
+
+          &:focus {
+            outline: none;
+            border-color: #7d7c7c;
+            box-shadow: 0 0 0 2px rgba(125, 124, 124, 0.2);
+          }
+        }
+
+        textarea {
+          resize: vertical;
+          min-height: 120px;
+        }
+
+        button {
+          padding: 12px;
+          background-color: #ccc8aa;
+          border: none;
+          border-radius: 0.5em;
+          font-weight: 600;
+          font-size: 1em;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: #191717;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #bcb7a1;
+          }
+        }
+      }
+    }
   }
 
 // footer section
