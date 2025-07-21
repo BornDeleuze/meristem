@@ -26,26 +26,32 @@
 <div class="section">
   <div class="two-column reverse form-section">
     <div>
-      <p class="call equal">Get in touch</p>
+      <p class="call equal">Contact</p>
     </div>
-  <form action="https://formsubmit.co/ddfe4f7712c6222c58c45996a4097bf2" method="POST">
-    <div class="form">
-      <div class="field equal">
-        <label for="message-field">
-          <span>message</span> 
-        </label>
-        <input type="text" name="name" required>
+    <form action="https://formsubmit.co/ddfe4f7712c6222c58c45996a4097bf2" method="POST">
+      <div class="form">
+        <div class="field equal">
+          <label for="name">
+            <span>Name</span>
+          </label>
+          <input id="name" type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field equal">
+          <label for="email">
+            <span>Email</span>
+          </label>
+          <input id="email" type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field equal">
+          <label for="message">
+            <span>Message</span>
+          </label>
+          <textarea id="message" name="message" rows="5" placeholder="Write something…" required></textarea>
+        </div>
+        <div class="field equal">
+          <button type="submit">Send</button>
+        </div>
       </div>
-      <div class="field equal">
-        <label for="message-field">
-          <span>email</span> 
-        </label>
-        <input type="email" name="email" required>
-      </div>
-      <div class="field equal">
-        <button type="submit">Send</button>
-      </div>
-    </div>
-  </form>
+    </form>
   </div>
 </div>
