@@ -8,11 +8,42 @@ export default class CounterComponent extends Component {
   @action
   toggleHamburger() {
     this.expandHamburger = !this.expandHamburger;
-    console.log('welp');
   }
   @action
   hideHamburger() {
     this.expandHamburger = false;
-    console.log('welo');
+  }
+  @action
+  setupScrollListener(element) {
+    const header = element;
+    
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
+    
+    // Throttle scroll events for better performance
+    let ticking = false;
+    const scrollListener = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    
+    window.addEventListener('scroll', scrollListener);
+    
+    // Cleanup function
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    };
   }
 }
