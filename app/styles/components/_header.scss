@@ -1,0 +1,43 @@
+header {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: $font-header;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 3.9px;
+  text-transform: uppercase;
+  color: #3e4646;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color-white;
+  color: $color-black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: $border-width solid $color-green;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: padding 0.3s ease, font-size 1s ease;
+
+  &.scrolled {
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: default;
+    color: $color-black;
+  }
+
+  p {
+    color: $color-text;
+  }
+}

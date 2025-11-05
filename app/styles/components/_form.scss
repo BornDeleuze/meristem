@@ -1,0 +1,84 @@
+
+.form-section {
+  padding: 1em;
+
+  .call {
+    text-align: right;
+    font-size: 2em;
+    flex-grow: 1;
+    font-weight: 400;
+  }
+
+  .form {
+    flex-grow: 4;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2em;
+    // border-radius: 1em;
+    // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      width: 80%;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 0.3em;
+      padding: 0.2em;
+
+      label {
+        span {
+          font-weight: 600;
+          font-size: 0.85em;
+          text-transform: uppercase;
+          color: $color-charcoal;
+          letter-spacing: 0.05em;
+        }
+      }
+
+      input,
+      textarea {
+        background-color: #fafafa;
+        border: 1px solid $color-green;
+        // border-radius: 0.5em;
+        padding: 12px;
+        font-size: 1em;
+        font-family: inherit;
+        color: $color-black;
+        transition: border 0.2s, box-shadow 0.2s;
+
+        &:focus {
+          outline: none;
+          border-color: $color-charcoal;
+          // box-shadow: 0 0 0 2px rgba(125, 124, 124, 0.2);
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      button {
+        padding: 12px;
+        background-color: $color-green;
+        border: none;
+        // border-radius: 0.5em;
+        font-weight: 600;
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $color-black;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #bcb7a1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+
+
+.section {
+  padding: 1em 0 1em 0;
+}
+
+.main {
+  padding-bottom: 2em;
+  border-bottom: $border-width solid $color-green;
+
+  img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.two-column {
+  padding-top: 2em;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  justify-content: center;
+}
+
+.twocolumnimg {
+  max-width: 300px;
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .two-column {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3em;
+  }
+
+  .twocolumnimg {
+    max-width: 300px;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+}
+
