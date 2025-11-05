@@ -1,0 +1,24 @@
+
+.meristem {
+  text-align: center;
+}
+
+.main {
+  padding-top: 2px;
+  border-bottom: $border-width solid $color-green;
+}
+
+#banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#title {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.gallery {
+  height: 10em;
+}

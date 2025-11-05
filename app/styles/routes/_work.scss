@@ -1,0 +1,14 @@
+@media screen and (min-width: $breakpoint-mobile) {
+  .work {
+    .left {
+      margin-left: auto;
+      max-width: 70%;
+    }
+
+    .right {
+      margin-left: auto;
+      max-width: 70%;
+    }
+  }
+}
+

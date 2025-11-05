@@ -1,7 +1,34 @@
 {{page-title "Contact"}}
 {{outlet}}
-<form action="https://formsubmit.co/e7346e8cb34e11fbca645547a07ef330" method="POST">
-     content <input type="text" name="name" required>
-     email <input type="email" name="email" required>
-     <button type="submit">Send</button>
-</form>
+<div class="section">
+  <div class="two-column reverse form-section">
+    <div class="call">
+      <p class="equal">Contact</p>
+    </div>
+    <div class="form">
+      <form action="https://formsubmit.co/ddfe4f7712c6222c58c45996a4097bf2" method="POST">
+        <div class="field equal">
+          <label for="name">
+            <span>Name</span>
+          </label>
+          <input id="name" type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="field equal">
+          <label for="email">
+            <span>Email</span>
+          </label>
+          <input id="email" type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field equal">
+          <label for="message">
+            <span>Message</span>
+          </label>
+          <textarea id="message" name="message" rows="5" placeholder="Write something…" required></textarea>
+        </div>
+        <div class="field equal">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

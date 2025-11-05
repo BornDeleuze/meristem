@@ -1,0 +1,10 @@
+.swiper-wrapper {
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    display: none;
+  }
+}
