@@ -1,6 +1,10 @@
 .swiper-wrapper {
   align-items: center;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  border: none;
+}
 
 @media (max-width: 767px) {
   .swiper .swiper-button-next,
