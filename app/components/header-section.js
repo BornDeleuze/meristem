@@ -14,6 +14,12 @@ export default class CounterComponent extends Component {
     this.expandHamburger = false;
   }
   @action
+  handleKeydown(event) {
+    if (event.key === 'Escape' && this.expandHamburger) {
+      this.hideHamburger();
+    }
+  }
+  @action
   setupScrollListener(element) {
     const header = element;
     
