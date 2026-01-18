@@ -4,9 +4,17 @@
   </LinkTo>
 
   <section class="p-menu1">
-    <nav id="navbar" class="navigation" role="navigation">
+    <nav id="navbar" class="navigation">
       <div class="menu-wrapper">
-        <button class="dropbtn ignore-outside" type="button" {{on "click" this.toggleHamburger}}>
+        <button
+            class="dropbtn ignore-outside"
+            type="button"
+            aria-label="Menu"
+            aria-controls="main-navigation"
+            aria-expanded={{this.expandHamburger}}
+            {{on "click" this.toggleHamburger}}
+            {{on "keydown" this.handleKeydown}}
+          >
           <div class="hamburger {{if this.expandHamburger "open"}}">
             <div class="bars bar1"></div>
             <div class="bars bar2"></div>
@@ -16,7 +24,10 @@
 
         <div class="dropdown">
           <div 
+            id="main-navigation"
             class="dropdown-content {{if this.expandHamburger "expand-dropdown"}}"
+            hidden={{not this.expandHamburger}}
+            {{on "keydown" this.handleKeydown}}
             {{on-click-outside this.hideHamburger exceptSelector=".ignore-outside"}}
           >
             <LinkTo @route="meristem" class="link1" {{on "click" this.hideHamburger}}>meristem</LinkTo>
