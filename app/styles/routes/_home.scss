@@ -50,7 +50,7 @@
 .work-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 0.3rem;
   margin: 4rem auto;
   max-width: 1200px;
   padding: 0 1rem;
@@ -60,6 +60,7 @@
   .work-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    gap: 1.5rem;
   }
 }
 

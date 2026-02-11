@@ -4,5 +4,10 @@
 }
 
 .content {
+  padding: 0em 0.1em 0em 0.1em;
+}
+@media (min-width: $breakpoint-mobile) {
+  .content {
   padding: 0em 2em 0em 2em;
+}
 }
