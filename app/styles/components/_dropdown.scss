@@ -62,7 +62,7 @@
   margin: 0.2em 0.2em 0em 0em;
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.9s ease, transform 0.9s ease;
   pointer-events: none;
 
   a {
@@ -79,6 +79,6 @@
 
 .expand-dropdown {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
   pointer-events: auto;
 }
