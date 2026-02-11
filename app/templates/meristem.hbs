@@ -1,50 +1,95 @@
 {{page-title "Meristem"}}
+
 <div class="page-container content meristem">
-  <div class="hero-section main section">
-    <img id="banner" src="/images/windsorchairdetail.jpg" alt="close up of red-filled carving on the back of a black windsor chiar" loading="eager"/>
+
+  <div class="hero-section">
+    <img
+      id="banner"
+      src="/images/windsorchairdetail.jpg"
+      alt="Close up of red-filled carving on the back of a black Windsor chair"
+      loading="eager"
+    />
   </div>
+
   <section class="definition">
-    <h1 class="center-text" id="title">meristem</h1>
-    <p>The actively dividing and multiplying cells that differentiate to 
-      form all parts of a plant. Found in the root tips, branch tips and 
-      lateral growth areas, the meristem is where the magic of plant growth 
-      happens. 
-    </p>
+    <h1 id="title">meristem</h1>
+
     <p>
-      <em>It’s the starting point for the life of a tree, 
-      and thus the starting point for the furniture I build.</em>
+      The actively dividing and multiplying cells that differentiate to
+      form all parts of a plant. Found in the root tips, branch tips and
+      lateral growth areas, the meristem is where the magic of plant growth happens.
+    </p>
+
+    <p class="emphasis">
+      It’s the starting point for the life of a tree,
+      and thus the starting point for the furniture I build.
     </p>
   </section>
-  <div class="image-carousel section" aria-label="Image Carousel">
-    <SwiperCarousel @images={{array
-      (hash src="/images/barstools2.jpg" loading="lazy" alt="A pair of winsor barstools")
-      (hash src="/images/armoire.jpg" loading="lazy" alt="A tall black and natural grain wooden armoire")
-      (hash src="/images/blanketchest3.jpg" loading="lazy" alt="Blanket chest with grained panels")
-      (hash src="/images/desk1.jpg" loading="lazy" alt="Drafting desk with tapered legs")
-      (hash src="/images/windsorchair2a.jpg" loading="lazy" alt="Classic Windsor chair")
-      (hash src="/images/alderbench1.jpg" loading="lazy" alt="Alder wood bench with live edge")
-      (hash src="/images/process4.jpg" loading="lazy" alt="Workbench with tools mid-project")
-      (hash src="/images/maplebench2detail.jpg" loading="lazy" alt="Detail of maple bench joinery")
-      (hash src="/images/kumikowallcabinet.jpg" loading="lazy" alt="Kumiko-style wall cabinet")  
-    }} />
-  </div>
+
+  <!-- Editorial Grid -->
+  <section class="work-grid">
+
+    <article class="card image">
+      <img src="/images/windsorchair2a.jpg" alt="Classic Windsor chair" loading="lazy" />
+    </article>
+
+    <article class="card image">
+      <img src="/images/armoire.jpg" alt="Tall black and natural grain wooden armoire" loading="lazy" />
+    </article>
+
+    <article class="card image">
+      <img src="/images/Milkingstool2.jpg" alt="shaped milking-style stool" loading="lazy" />
+    </article>
+
+    <article class="card text">
+      <p>
+        Meristem Woodworks is the home for the furniture and interior carpentry work of Philip Shelton.
+      </p>
+    </article>
+
+    <article class="card image">
+      <img src="/images/alderbench1.jpg" alt="Alder wood bench with live edge" loading="lazy" />
+    </article>
+
+    <article class="card text wide">
+      <p>
+        I characterize my furniture design style as wood-forward; showcasing the wood for what it is, without diminishing or masking it.
+        The wood itself is the centerpiece and the aesthetic of my work.
+      </p>
+    </article>
+
+    <article class="card image">
+      <img src="/images/blanketchest3.jpg" alt="Blanket chest with grained panels" loading="lazy" />
+    </article>
+
+    <article class="card image">
+      <img src="/images/kumikowallcabinet.jpg" alt="Kumiko-style wall cabinet" loading="lazy" />
+    </article>
+
+    <article class="card image">
+      <img src="/images/desk2.jpg" alt="wooden drafting desk" loading="lazy" />
+    </article>
+
+    <article class="card image">
+      <img src="/images/barstools2.jpg" alt="Pair of Windsor barstools" loading="lazy" />
+    </article>
+
+    <article class="card image">
+      <img src="/images/alderbench5.jpg" alt="windsor style slab bench" loading="lazy" />
+    </article>
+
+
+  </section>
+
   <section class="introduction">
-    <p>
-      Meristem Woodworks is the home for the furniture and interior carpentry work of Philip Shelton.
-    </p>  
-    <p>
-      I characterize my furniture design style as wood-forward; showcasing the wood for what it is, without diminishing or masking it.
-    </p>
-    <p>
-      The wood itself is the centerpiece and the aesthetic of my work.  
-    </p>
+
     <p>
       Wood is a living medium, and the furniture maker an artist who works that life into new forms.
-      Furniture making is not a static activity, with dead inputs and stagnant outcomes. In crafting new forms of being from living mediums, I strive to imbue each piece with the honor and respect that the trees deserve as they’re morphed into becoming part of our daily lives in our built spaces.
-    </p>
-    <p>
-      After all, furniture is but one possibility in the lifespan of a tree.
+      In crafting new forms from living materials, I strive to imbue each piece with the honor and respect that the trees deserve as they become part of our daily lives.
     </p>
   </section>
+
+
 </div>
+
 {{outlet}}
