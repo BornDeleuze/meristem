@@ -1,14 +1,6 @@
-/* =========================
-   Page Base
-   ========================= */
-
 .meristem {
   text-align: center;
 }
-
-/* =========================
-   Hero
-   ========================= */
 
 .hero-section {
   border-bottom: $border-width solid $color-green;
@@ -20,10 +12,6 @@
   object-fit: cover;
   display: block;
 }
-
-/* =========================
-   Definition Block
-   ========================= */
 
 .definition {
   font-family: 'Source Serif 4', serif;
@@ -59,10 +47,6 @@
   }
 }
 
-/* =========================
-   Editorial Grid
-   ========================= */
-
 .work-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -78,8 +62,6 @@
     gap: 2rem;
   }
 }
-
-/* Cards */
 
 .card {
   position: relative;
@@ -111,10 +93,6 @@
 .card.text.wide {
   grid-column: span 2;
 }
-
-/* =========================
-   Introduction
-   ========================= */
 
 .introduction {
   font-family: 'Source Serif 4', serif;
