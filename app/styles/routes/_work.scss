@@ -1,14 +1,53 @@
-@media screen and (min-width: $breakpoint-mobile) {
-  .work {
-    .left {
-      margin-left: auto;
-      max-width: 70%;
-    }
 
-    .right {
-      margin-left: auto;
-      max-width: 70%;
-    }
-  }
+.work h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: $color-text;
 }
 
+.work {
+  font-family: 'Source Serif 4', serif;
+}
+
+.work p {
+  font-size: 1rem;
+  line-height: 1.85;
+  margin-bottom: 1.75rem;
+  color: $color-text;
+  hanging-punctuation: first last;
+}
+
+.content-sub {
+  margin-bottom: 3rem;
+}
+
+.two-column {
+  display: block;
+}
+
+@media screen and (min-width: $breakpoint-mobile) {
+  .two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    align-items: start;
+  }
+  .work{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work .left,
+  .work .right {
+    margin-left: auto;
+  }
+}
+.work img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

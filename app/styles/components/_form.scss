@@ -11,12 +11,10 @@
 
   .form {
     flex-grow: 4;
-    max-width: 600px;
+    width: 600px;
     margin: 0 auto;
     background-color: #fff;
     padding: 2em;
-    // border-radius: 1em;
-    // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 
     @media screen and (max-width: $breakpoint-mobile) {
       width: 80%;
