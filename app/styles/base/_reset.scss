@@ -1,17 +1,25 @@
-/* Base styles and resets */
-
 body {
   font-family: $font-primary;
   background-color: $color-white;
   margin: 0;
-  color: $color-text;
+  color: #444; // Softer than #333
   font-style: normal;
-  color: #333;
   font-weight: 400;
-  text-transform: none;
-  line-height: 27px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h3 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+// Better text rendering
+* {
+  text-rendering: optimizeLegibility;
 }

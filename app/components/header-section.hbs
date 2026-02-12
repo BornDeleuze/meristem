@@ -26,7 +26,6 @@
           <div 
             id="main-navigation"
             class="dropdown-content {{if this.expandHamburger "expand-dropdown"}}"
-            hidden={{not this.expandHamburger}}
             {{on "keydown" this.handleKeydown}}
             {{on-click-outside this.hideHamburger exceptSelector=".ignore-outside"}}
           >
