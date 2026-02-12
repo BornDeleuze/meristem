@@ -1,53 +1,51 @@
+.work {
+  font-family: 'Source Serif 4', serif;
+  max-width: 56rem; // More standard than 60%
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 1.5rem;
+  
+  @media (min-width: $breakpoint-mobile) {
+    padding: 4rem 2rem;
+  }
+}
 
 .work h2 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.05rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 0.75rem;
-  color: $color-text;
-}
-
-.work {
-  font-family: 'Source Serif 4', serif;
+  margin-bottom: 1rem;
+  color: $color-charcoal; // Slightly softer than pure text color
 }
 
 .work p {
-  font-size: 1rem;
-  line-height: 1.85;
-  margin-bottom: 1.75rem;
-  color: $color-text;
-  hanging-punctuation: first last;
+  font-size: 1.0625rem; // Slightly larger for better readability
+  line-height: 1.75; // Tighter than 1.85 for better rhythm
+  margin-bottom: 1.5rem;
+  color: #444; // Slightly softer black
 }
 
 .content-sub {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .two-column {
   display: block;
-}
-
-@media screen and (min-width: $breakpoint-mobile) {
-  .two-column {
+  margin-bottom: 3rem;
+  
+  @media screen and (min-width: $breakpoint-mobile) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 4rem;
+    column-gap: 3rem;
     align-items: start;
   }
-  .work{
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .work .left,
-  .work .right {
-    margin-left: auto;
-  }
 }
+
 .work img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-top: 1rem;
 }

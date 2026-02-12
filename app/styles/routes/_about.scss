@@ -1,5 +1,3 @@
-
-
 .section {
   padding: 1em 0 1em 0;
   font-family: 'Source Serif 4', serif;
@@ -7,50 +5,58 @@
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
-.about{
+
+.about {
+  max-width: 56rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 80%;
+  padding: 3rem 1.5rem;
+  
+  @media (min-width: $breakpoint-mobile) {
+    padding: 4rem 2rem;
+  }
 }
 
-.main {
+.about .main {
   border-bottom: $border-width solid $color-green;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 
   img {
-    width: 70%;
+    width: 100%;
+    max-width: 48rem;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 }
 
-.two-column {
-  padding-top: 2em;
+.about .two-column {
+  padding-top: 0;
   display: flex;
-  align-items: center;
-  gap: 3em;
-  justify-content: center;
-}
-
-.twocolumnimg {
-  max-width: 300px;
-}
-
-@media screen and (max-width: $breakpoint-mobile) {
-  .two-column {
-    padding-top: 2em;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 3em;
-  }
-
-  .twocolumnimg {
-    max-width: 300px;
-  }
-
-  .reverse {
-    flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 2rem;
+  
+  @media (min-width: $breakpoint-mobile) {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: flex-start;
   }
 }
 
+.about .twocolumnimg {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  
+  @media (min-width: $breakpoint-mobile) {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.about .reverse {
+  @media (min-width: $breakpoint-mobile) {
+    flex-direction: row;
+  }
+}
